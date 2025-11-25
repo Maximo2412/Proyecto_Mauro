@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyectoWebEscolar</title>
+    <link rel="shortcut icon" href="./proyectoWebEscolar_files/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./proyectoWebEscolar_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./proyectoWebEscolar_files/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assest/css/styles.css">
+</head>
+
+<body>
+        <header>
+        <div class="container">
+            <div class="row">
+                <div class="contenedor">
+                    <div><img class="logo" src="./assest/multimedea/imagenes/logo.png" alt=""></div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a>
+                            </li>
+                            <li><a href="Informatica.html">Informática</a>
+                            </li>
+                            <li><a href="Construcciones.html">Construcciones</a>
+                            </li>
+                            <li><a href="Electromecanica.html">Electromecánica</a>
+                            </li> 
+                            <strong>
+                                <li><a>Contacto</a></li>
+                            </strong>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="margin-top: 5%;"></div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card">
+                        <h2>📬 Enviar mensaje</h2>
+                        <form action="send_contact.php" method="POST" id="formContact">
+                            <label>👤 Nombre</label>
+                            <input class="form-control" type="text" name="nombre" placeholder="Tu nombre" required>
+
+                            <label>📧 Correo</label>
+                            <input class="form-control" type="email" name="email" placeholder="tu@email.com" required>
+
+                            <label>💬 Mensaje</label>
+                            <textarea class="form-control" name="mensaje" placeholder="Escribí tu mensaje..." rows="5"
+                                required></textarea>
+
+                            <br>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                        <div class="msg" id="resp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-body-tertiary text-center footer">
+        <p>© 2025 tecnica8lanus@yahoo.com.arm | Todos los derechos reservados</p>
+    </footer>
+    <button id="backToTop" class="back-to-top">↑</button>
+    <script src="assest/js/jQuery.js"></script>
+    <script src="assest/js/bootstrap.min.js"></script>
+    <script src="assest/js/menuFixed.js"></script>
+    <script src="assest/js/galeria.js"></script>
+    <script src="assest/js/fade-up.js"></script>
+    <script src="assest/js/footer.js"></script>
+    <script src="assest/js/back-top.js"></script>
+    <script src="assest/js/newsteler.js"></script>
+</body>
+
+</html>
