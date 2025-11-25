@@ -1,0 +1,297 @@
+@import url("root.css");
+
+.contenedor {
+    width: 98%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.contenedor p {
+    margin-bottom: 40px;
+}
+
+.logo {
+    margin-top: 2%;
+    width: 6%;
+    border-radius: 50%;
+    margin-bottom: 2%;
+    transition: all .5s ease;
+}
+
+.logo:hover {
+    transform: rotatez(360deg);
+    /* Rotación en el eje z */
+    box-shadow: 0 0 25px 2px black;
+}
+
+header nav {
+    background-color: #01213fd5;
+    margin-bottom: 10px;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+    border-radius: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+header nav ul li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 2%;
+}
+
+header nav ul li a {
+    display: block;
+    font-family: epunda;
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #023452;
+    transform: scale(.95);
+    color: white;
+    border-radius: 5px;
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1%;
+}
+
+.menu-fixed ul li a {
+    padding: 5px 20px;
+}
+
+/*RETRATOS*/
+.contenedor-retratos {
+    justify-content: center;
+    align-items: center;
+}
+
+.retratos {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    transition: all .5s ease;
+    border-radius: 8px;
+    box-shadow: 0 0 25px .5px rgb(182, 180, 180);
+    margin-top: 5%;
+    border: none;
+    cursor: pointer;
+}
+
+.retratos:hover {
+    transform: scale(.90);
+    box-shadow: 0 0 25px .5px rgb(107, 106, 106);
+}
+
+
+
+/*GAELRIA DE IMAGENES*/
+.image-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-galeria {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 80%;
+}
+
+.contenedor-imagen {
+    position: relative;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+    overflow: hidden;
+    background-color: #efefef;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgb(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.contenedor-imagen img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor-imagen:hover {
+    flex: 2;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* FADE-UP */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 10px 10;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lema {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 500;
+    font-family: JoseSans;
+    font-size: 3rem;
+    color: rgb(231, 231, 231);
+    text-align: justify; 
+    text-shadow: 1px 1px 2px black;
+    text-justify: inter-word;
+    hyphens: auto;
+    padding: 0 10%;
+}
+
+.boton-inscripcion {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: exo2;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* BOTÓN UP */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #053d79;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.6s, box-shadow 0.6s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+    background-color: #031e3b;
+    transform: rotatez(360deg);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.contiene {
+    perspective: 1000px;
+}
+
+/* POPUP */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.seccion-con-fondo {
+    background-image: url("../multimedea/imagenes/Almafuerte_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 94vh;
+    margin-top: 0;
+    position: relative;
+}
+
+.col-lg-3 {
+    font-size: 17px;
+    font-weight: epunda;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-hover tr:hover {
+    background-color: #f2f2f2;
+}
+
+.separacion {
+    margin-top: 5%;
+}
