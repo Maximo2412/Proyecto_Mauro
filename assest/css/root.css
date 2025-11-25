@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: EpundaSlabB;
+    src: url("../multimedea/estilos/EpundaSlab-Bold.ttf");
+}
+
+@font-face {
+    font-family: epunda;
+    src: url("../multimedea/estilos/EpundaSlab-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: exo2;
+    src: url("../multimedea/estilos/Exo2-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: josefin;
+    src: url("../multimedea/estilos/JosefinSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: JoseSans;
+    src: url("../multimedea/estilos/JosefinSans-Italic-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: var(--text-color);
+    background-image: url("../multimedea/imagenes/bodybackground.png");
+}
+
+header {
+    width: 100%;
+    height: 30vh;
+}
+
+section {
+    background-color: var(--background-section);
+}
+
+:root {
+    --primary-color: #007bff;
+    /* Color azul */
+    --secondary-color: #6c757d;
+    /* Color gris */
+    --background-color: #f8f9fa;
+    /* Color de fondo claro */
+    --text-color: #212529;
+    /* Color de texto oscuro */
+    --nav: #242424;
+    /*Nav color*/
+    --background-header: #023452;
+    --background-section: #ffffff;
+
+
+}
