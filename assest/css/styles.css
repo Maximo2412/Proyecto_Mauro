@@ -269,10 +269,11 @@ header nav ul li a:hover {
     position: relative;
 }
 
-.col-lg-3 {
+.container {
     font-size: 17px;
-    font-weight: epunda;
+    font-family: epunda; 
 }
+
 
 .table {
     width: 100%;
@@ -294,4 +295,5 @@ header nav ul li a:hover {
 
 .separacion {
     margin-top: 5%;
+
 }
