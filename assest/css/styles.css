@@ -168,7 +168,7 @@ header nav ul li a:hover {
     z-index: 500;
     font-family: JoseSans;
     font-size: 3rem;
-    color: rgb(231, 231, 231);
+    background-color: #053d79;
     text-align: justify; 
     text-shadow: 1px 1px 2px black;
     text-justify: inter-word;
@@ -297,3 +297,4 @@ header nav ul li a:hover {
     margin-top: 5%;
 
 }
+
