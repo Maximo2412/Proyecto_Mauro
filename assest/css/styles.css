@@ -275,6 +275,7 @@ header nav ul li a:hover {
 .container {
     font-size: 17px;
     font-family: epunda; 
+    text-align: justify; 
 }
 
 
@@ -300,6 +301,7 @@ header nav ul li a:hover {
     margin-top: 5%;
 
 }
+
 
 
 
