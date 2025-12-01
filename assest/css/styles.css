@@ -47,6 +47,10 @@ header nav ul li {
     margin-left: 2%;
 }
 
+header nav ul strong li {
+    margin-left: 14%; 
+}
+
 header nav ul li a {
     display: block;
     font-family: epunda;
@@ -297,4 +301,5 @@ header nav ul li a:hover {
     margin-top: 5%;
 
 }
+
 
